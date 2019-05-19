@@ -6,18 +6,13 @@
 // Gabriel - Code Below:
 
 function sum(a, b) { //eslint-disable-line
-   var result = []; // Gabriel - This Variable returns an empty array 
-   result[0] = a + b; 
-  // Gabriel - Of the "result" array of [0] = a + b;" is the First Element. The first element is the sum of the numbers of this actual result. 
-  // Gabriel - In this case the element is the "result" array of spot #1 (for arrays [0] is considered the first array every next array is actually 1 number ahead)
-  // result[1] = "The sum of " + a + " and " + b + " is " + result[0];
-   
+  var result = []; // Gabriel - This Variable returns an empty array 
+  result[0] = a + b; 
   result[1] = `The sum of ${a} and ${b} is ${result[0]}.`; // Gabriel - golden nugget :)
   return result;
 }
 
-// Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 
 
@@ -26,23 +21,31 @@ function sum(a, b) { //eslint-disable-line
 // Write code here
 
 function multiply(a, b) { //eslint-disable-line
-
+  var answerMultiply = [];
+  answerMultiply[0] = a * b;
+  answerMultiply[1] = `Thre product of ${a} and ${b} is ${answerMultiply}.`;
+  return resultMultiply
 }
 
-// Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 
 // Problem 3:
 
-// Write your code here
+// Write code here  
 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  var answerSumAndMultiply = []/
+  var addIt = sum(a, b)[0];
+  var timesIt = multiply(a, b)[0];
+  answerSumAndMultiply[0] = sum(addIt, c)[0];
+  answerSumAndMultiply[1] = multiply(timesIt, c)[0];
+  answerSumAndMultiply[2] = `${a} and ${b} and ${c} and ${answerSumAndMultiply[0]}.`;
+  answerSumAndMultiply[3] = `The product of ${a} and ${b} and ${c} is ${answerSumAndMultiply[1]}.`;
+  return resultSumAndMultiply
 }
 
-// Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Problem 4:
 
@@ -51,11 +54,13 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  var answerSumArray = [];
+  answerSumArray[0] = sum(sum(sumArr)[0], sumArr[1])[0], sumArr[2])[0];
+  answerSumArray[1] = `${sumArr[0]}, ${sumArr[1]}, ${sumArr[2]} was passed in as an array of numbers, and ${answerSumArray[0]} in their sum.`;
+  return answerSumArray;
 }
 
-// Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 
 
@@ -64,24 +69,12 @@ function sumArray(sumArr) { //eslint-disable-line
 // Write your code here
 
 function multiplyArray(multArr) { //eslint-disable-line
-
+  var answerMultiplyArray = [];
+  answerMultiplyArray[0] = multiply(multiply(multArr[0], mutlArr[1])[0], multArr[2])[0];
+  answerMultiplyArray[1] = `the numbers ${multArr[0]}, ${multArr[1]}, ${multArr[2]} have a product of ${answerMultiplyArray}.`;
+  return answerMultiplyArray;
 }
 
-// Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
-// STRETCH GOAL 
-// Problem 6:
-
-// Write your code here
-
-// var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-
-// function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
-// Gabriel - Write Functions Here :)
-
-}
-
-// Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+// STRETCH GOAL - I did not reach for the stretch goal, I feel I will go back to this though and try later on :) 
